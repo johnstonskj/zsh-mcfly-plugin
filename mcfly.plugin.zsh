@@ -1,18 +1,15 @@
 # -*- mode: sh; eval: (sh-set-shell "zsh") -*-
 #
 # Plugin Name: mcfly
+# Description: Plugin to integrate the `mcfly` command history tool.
 # Repository: https://github.com/johnstonskj/zsh-mcfly-plugin
-#
-# Description:
-#
-#   Plugin to integrate the `mcfly` command history tool.
 #
 # Public variables:
 #
 # * `MCFLY`; plugin-defined global associative array with the following keys:
-#   * \`_ALIASES\`; a list of all aliases defined by the plugin.
-#   * \`_FUNCTIONS\`; a list of all functions defined by the plugin.
-#   * \`_PLUGIN_DIR\`; the directory the plugin is sourced from.
+#   * `_ALIASES`; a list of all aliases defined by the plugin.
+#   * `_FUNCTIONS`; a list of all functions defined by the plugin.
+#   * `_PLUGIN_DIR`; the directory the plugin is sourced from.
 #
 
 ############################################################################
