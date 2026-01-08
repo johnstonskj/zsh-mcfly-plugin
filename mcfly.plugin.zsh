@@ -66,16 +66,6 @@ MCFLY[_FUNCTIONS]=""
 }
 .mcfly_remember_fn .mcfly_remember_alias
 
-#
-# This function does the initialization of variables in the global variable
-# `MCFLY`. It also adds to `path` and `fpath` as necessary.
-#
-mcfly_plugin_init() {
-    builtin emulate -L zsh
-    builtin setopt extended_glob warn_create_global typeset_silent no_short_loops rc_quotes no_auto_pushd
-}
-.mcfly_remember_fn mcfly_plugin_init
-
 ############################################################################
 # Plugin Unload Function
 ############################################################################
@@ -110,8 +100,6 @@ mcfly_plugin_unload() {
 ############################################################################
 # Initialize Plugin
 ############################################################################
-
-mcfly_plugin_init
 
 eval $(mcfly init zsh)
 
